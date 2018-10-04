@@ -1,0 +1,155 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AIVO",
+		"_postman_id": "5badc5fb-f5e0-3c5c-9328-beb29ab199d0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test - /test/getTenTweets",
+			"request": {
+				"url": "localhost/twitter/test/getTenTweets",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Traer 10 tweets - /getTenTweets?account=xxx",
+			"request": {
+				"url": {
+					"raw": "localhost/twitter/getTenTweets?account=Eli_piojo",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"twitter",
+						"getTenTweets"
+					],
+					"query": [
+						{
+							"key": "account",
+							"value": "Eli_piojo",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "",
+							"value": "aaeeiioouubbddjj",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Test - /test/getTweetsFromNonExistingAccount",
+			"request": {
+				"url": "localhost/twitter/test/getTweetsFromNonExistingAccount",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Traer 1 tweet sin token - /getSingleTweet",
+			"request": {
+				"url": "localhost/twitter/getSingleTweet",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login - /login",
+			"request": {
+				"url": "localhost/twitter/login",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Traer 1 tweet con token - /getSingleTweet?token=xxxx&id=1",
+			"request": {
+				"url": {
+					"raw": "localhost/twitter/getSingleTweet?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Mzg2Njg4MjAsImV4cCI6MTUzODY3MjQyMCwiYXVkIjoiM2FlMjU1NDExMGY4YmY1NDNkYmY5NzAyYjM0ZWUzM2VkZTU2NWM2NiIsImRhdGEiOnsiaWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkIjoiIn0sImFwcCI6IkFQSSBSRVNUIn0.YE3yA38nsRc6vcHPTr27CgBUQViGgXopgOCh1bOzmAc&id=1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"twitter",
+						"getSingleTweet"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Mzg2Njg4MjAsImV4cCI6MTUzODY3MjQyMCwiYXVkIjoiM2FlMjU1NDExMGY4YmY1NDNkYmY5NzAyYjM0ZWUzM2VkZTU2NWM2NiIsImRhdGEiOnsiaWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkIjoiIn0sImFwcCI6IkFQSSBSRVNUIn0.YE3yA38nsRc6vcHPTr27CgBUQViGgXopgOCh1bOzmAc",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1Mzg2NTUyMTIsImV4cCI6MTUzODY1ODgxMiwiYXVkIjoiM2FlMjU1NDExMGY4YmY1NDNkYmY5NzAyYjM0ZWUzM2VkZTU2NWM2NiIsImRhdGEiOnsiaWQiOiIxIiwidXNlcm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkIjoiIn0sImFwcCI6IkFQSSBSRVNUIn0.M6nL3FL15B5acjt-vFEYr3R6DHN1u8_e5XIxAQM9ZLs",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
