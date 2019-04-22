@@ -1,1 +1,1 @@
-# PHP-GetTweetsFromTwitter
+# GetTweetsFromTwitter
