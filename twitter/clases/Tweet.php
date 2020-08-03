@@ -21,10 +21,10 @@ class Tweet
 		ini_set('display_errors', 1);
 
 		$settings = array(
-			'oauth_access_token' => "1047129903957708800-TzTbtatCEJ3riWMICQu6sFw6XyKJav",
-			'oauth_access_token_secret' => "8LOWjsjZc6U2FgU7wpu4AQBFAsGeyClntO1Qdf1TyNhDe",
-			'consumer_key' => "T33FdMds5N2rLDJjXfrz6jzM2",
-			'consumer_secret' => "T6NjQKEopv7mSvTEPUR1mZa4VWEYqAkZZmE6vsWmOGJFxVlGYC"
+			'oauth_access_token' => "",
+			'oauth_access_token_secret' => "",
+			'consumer_key' => "",
+			'consumer_secret' => ""
 		);
 
 		$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
